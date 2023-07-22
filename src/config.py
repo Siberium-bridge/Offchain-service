@@ -1,9 +1,12 @@
 import json
 import os
+import logging
 
 from eth_account import Account
 from web3.middleware.geth_poa import async_geth_poa_middleware
 from web3 import AsyncWeb3
+
+logging.basicConfig(level=logging.INFO)
 
 # config
 EXTERNAL_RPC = os.getenv("EXTERNAL_RPC")
