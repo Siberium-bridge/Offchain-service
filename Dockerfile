@@ -7,3 +7,4 @@ RUN python -m pip install -r requirements.txt
 WORKDIR /app
 
 COPY src/ .
+CMD python3 main.py
